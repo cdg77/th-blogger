@@ -1,0 +1,17 @@
+<h1>Contact</h1>  
+<div class="row">
+  <div class="col-md-6">
+    <p>Want to get in touch?</p>
+    <ul>
+      <li>{{#link-to 'phone'}}Phone{{/link-to}}</li>
+      <li>{{#link-to 'email'}}Email{{/link-to}}</li>
+      {{!-- <li>☏ Phone: 1-800-Dre-Days</li> --}}
+      {{!-- <li>✉ Email: <a href="dre@fashion.com">dre@fashion.com</a>.</li> --}}
+    </ul>
+
+    <p>Or, <a href="#" {{action 'sendMessage'}}>Click here</a>  to send me a message. </p>
+  </div>
+  <div class="col-md-6">
+    {{outlet}}
+  </div>
+</div>
