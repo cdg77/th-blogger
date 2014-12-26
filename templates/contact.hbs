@@ -1,6 +1,7 @@
-<h1>Contact</h1>  
+<h1>Contact</h1>
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-6" style="background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
     <p>Want to get in touch?</p>
     <ul>
       <li>{{#link-to 'phone'}}Phone{{/link-to}}</li>
@@ -9,9 +10,17 @@
       {{!-- <li>✉ Email: <a href="dre@fashion.com">dre@fashion.com</a>.</li> --}}
     </ul>
 
+    {{#if messageSent}}
+    <p>Thanks! Your message has been sent... I will respond as soon as I can <br> your 
+      confirmation number is: {{confirmationNumber}}</p>
+    {{else}}
     <p>Or, <a href="#" {{action 'sendMessage'}}>Click here</a>  to send me a message. </p>
+    {{/if}}
+
   </div>
+
   <div class="col-md-6">
     {{outlet}}
   </div>
+
 </div>
