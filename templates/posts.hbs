@@ -1,7 +1,13 @@
 <h1>Novel Details</h1>
 
-<ul>
+{{!-- <ul>
 	<li><a href="http://noveldetails.tumblr.com/post/98658441606/i-think-i-love-vintage-for-many-reasons-one-of">I love vintage fashion!</li>
 	<li><a href="#">Dresses!</li>
 	<li><a href="#">How to wear vintage!</li>
+</ul> --}}
+
+<ul>
+  {{#each}}
+    <li><a href="#">{{title}}</li>
+  {{/each}}
 </ul>
