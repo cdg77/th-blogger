@@ -1,4 +1,4 @@
-Blogger.AboutController= Ember.Controller.extend({
+Blogger.AboutController = Ember.Controller.extend({
   isPictureShowing: false,
 
   actions: {

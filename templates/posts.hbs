@@ -8,6 +8,6 @@
 
 <ul>
   {{#each}}
-    <li><a href="#">{{title}}</li>
+    <li>{{link-to 'post' this.id}}{{title}}{{/link-to}}</li>
   {{/each}}
 </ul>
